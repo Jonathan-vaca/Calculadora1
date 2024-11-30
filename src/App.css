@@ -1,0 +1,123 @@
+/* Estilo base para la página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(47, 201, 183);
+  margin: 0;
+}
+
+/* Estilo para la calculadora */
+.calculator {
+  background-color: rgb(96, 96, 96);
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(225, 225, 225, 0.3);
+  margin-right: 20px; /* Espacio para el historial */
+}
+
+/* Display de la calculadora */
+.display {
+  background-color: rgb(255, 237, 237);
+  color: rgb(38, 21, 21);
+  padding: 20px;
+  font-size: 24px;
+  text-align: right;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Previsualización del resultado en el display */
+.result-preview {
+  color: rgb(255, 64, 64);
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+/* Estilo para los botones de la calculadora */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+}
+
+button:hover {
+  background-color: #6d6d6d;
+}
+
+/* Botón de borrar */
+.clear {
+  background-color: rgb(255, 0, 144);
+}
+
+/* Botón de igual */
+.equal {
+  background-color: rgb(0, 255, 106);
+}
+
+/* Estilo para el contenedor del historial */
+.history-container {
+  background-color: #6d6d6d;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del historial */
+.history-container h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
+}
+
+/* Lista de historial */
+.history-list {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Elementos de la lista del historial */
+.history-list li {
+  background-color: #6d6d6d;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 16px;
+}
+
+/* Botón para limpiar el historial */
+.clear-history {
+  background-color: rgb(106, 0, 220);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.clear-history:hover {
+  background-color: rgb(255, 51, 153);
+}
